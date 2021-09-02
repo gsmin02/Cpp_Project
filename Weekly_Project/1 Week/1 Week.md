@@ -1,4 +1,4 @@
-### C vs C++
+## C vs C++
 
 * C
 ```c
@@ -19,7 +19,7 @@ int main() {
 }
 ```
 
-### C++ 출력 연습
+## C++ 출력 연습
 * C++
 ```c++
 #include <iostream>
@@ -37,3 +37,11 @@ int main() {
 	return 0;
 }
 ```
+
+## 출처
+Computer S/W, [Induk Univ][googlelink]   
+한성현 교수님 -  hsh@induk.ac.kr   
+C/C++ 프로그래밍 | 송재철, 한성현, 김경신 공저 | 양서각 | 2007년 03월 03일
+
+[id]: URL "Optional Title here"
+[googlelink]: https://www.induk.ac.kr "Go google"
