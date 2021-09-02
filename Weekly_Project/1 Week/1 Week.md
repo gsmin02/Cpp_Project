@@ -24,16 +24,16 @@ int main() {
 ```c++
 #include <iostream>
 int main() {
-	std::cout << "1.구승민\n";
-	std::cout << "2.구승민\n";
-	std::cout << "3.구승민\n";
-	std::cout << "4.구승민\n";
-	std::cout << "5.구승민\n";
-	std::cout << "6.구승민\n";
-	std::cout << "7.구승민\n";
-	std::cout << "8.구승민\n";
-	std::cout << "9.구승민\n";
-	std::cout << "10.구승민\n";
+	std::cout << "1.Name\n";
+	std::cout << "2.Name\n";
+	std::cout << "3.Name\n";
+	std::cout << "4.Name\n";
+	std::cout << "5.Name\n";
+	std::cout << "6.Name\n";
+	std::cout << "7.Name\n";
+	std::cout << "8.Name\n";
+	std::cout << "9.Name\n";
+	std::cout << "10.Name\n";
 	return 0;
 }
 ```
