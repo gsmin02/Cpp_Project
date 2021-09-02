@@ -1,6 +1,7 @@
-// C vs C++
-// C
-```
+### C vs C++
+
+* C
+```c
 #include <stdio.h>
 int main() {
 	printf("Hello, World!\n");
@@ -8,8 +9,8 @@ int main() {
 }
 ```
 
-// C++
-```
+* C++
+```c++
 #include <iostream>
 using namespace std;
 int main() {
@@ -18,8 +19,9 @@ int main() {
 }
 ```
 
-// C++ 출력 연습
-```
+### C++ 출력 연습
+* C++
+```c++
 #include <iostream>
 int main() {
 	std::cout << "1.구승민\n";
