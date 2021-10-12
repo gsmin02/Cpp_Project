@@ -97,6 +97,21 @@ class Dog {
 Dog coco; // 객체
 ```
 
+## 멤버함수를 클래스 안에서 정의
+```c
+class Dog {
+    private:
+        int age;
+    public:
+        int getAge() {
+            return age;
+        }
+        void setAge(int a) {
+            age = a;
+        }
+};
+```
+
 ## 멤버함수를 클래스 외부에서 정의
 - 리턴형 클래스명::멤버함수명(매개변수 리스트)
 ```c
