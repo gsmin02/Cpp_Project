@@ -1,7 +1,7 @@
 ## C vs C++
 
 * C
-```c
+```cpp
 #include <stdio.h>
 int main() {
 	printf("Hello, World!\n");
@@ -10,7 +10,7 @@ int main() {
 ```
 
 * C++
-```c++
+```cpp
 #include <iostream>
 using namespace std;
 int main() {
@@ -21,7 +21,7 @@ int main() {
 
 ## C++ 출력 연습
 * C++
-```c++
+```cpp
 #include <iostream>
 int main() {
 	std::cout << "1.Name\n";
