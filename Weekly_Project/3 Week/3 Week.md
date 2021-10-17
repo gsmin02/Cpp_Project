@@ -1,6 +1,6 @@
 ## 세 수의 최댓값, 최솟값
 
-```c
+```cpp
 #include<iostream>
 using std::cout;
 using std::cin;
@@ -19,7 +19,7 @@ int main() {
 
 ## switch~case문 계산기
 
-```c
+```cpp
 #include <iostream>
 using std::cout;
 using std::cin;
@@ -48,7 +48,7 @@ int main() {
 
 ## 100부터 1까지 5의 배수 출력 프로그램
 
-```c
+```cpp
 #include <iostream>
 using std::cout;
 using std::endl;
@@ -64,7 +64,7 @@ int main() {
 
 ## for 문으로 C++ 스타일로 이름 10번 출력
 
-```c
+```cpp
 #include <iostream>
 using std::cout;
 using std::endl;
@@ -79,7 +79,7 @@ int main() {
 
 ## ASCII코드 표를 출력
 
-```c
+```cpp
 #include <iostream>
 using std::cout;
 using std::endl;
@@ -94,7 +94,7 @@ int main() {
 
 ## switch~case문 계산(반복)
 
-```c
+```cpp
 #include <iostream>
 using std::cout;
 using std::cin;
@@ -127,7 +127,7 @@ int main() {
 
 ## 임의의 개수의 수를 입력 받아 합과 평균 출력
 
-```c
+```cpp
 #include <iostream>
 using std::cout;
 using std::cin;
@@ -148,7 +148,7 @@ int main() {
 
 ## if문 예제 1
 
-```c
+```cpp
 #include <iostream>
 using std::cout;
 using std::cin;
@@ -176,7 +176,7 @@ int main() {
 
 ## if문 예제2
 
-```c
+```cpp
 #define _CRT_SECURE_NO_WARNINGS //Visual Studio에서만 사용
 #include <stdio.h>
 int main(void)) {
@@ -193,7 +193,7 @@ int main(void)) {
 
 ## if문 예제 3
 
-```c
+```cpp
 #define _CRT_SECURE_NO_WARNINGS //Visual Studio에서만 사용
 #include <stdio.h>
 int main(void)
@@ -209,7 +209,7 @@ int main(void)
 
 ## if문 예제 4
 
-```c
+```cpp
 #define _CRT_SECURE_NO_WARNINGS //Visual Studio에서만 사용
 #include <stdio.h>
 int main(void)
@@ -225,7 +225,7 @@ int main(void)
 
 ## if~else문 예제 1
 
-```c
+```cpp
 #include <iostream>
 using std::cout;
 using std::cin;
@@ -242,7 +242,7 @@ int main() {
 
 ## if~else문 예제 2
 
-```c
+```cpp
 #define _CRT_SECURE_NO_WARNINGS //Visual Studio에서만 사용
 #include <stdio.h>
 int main(void)
@@ -258,7 +258,7 @@ int main(void)
 
 ## if~else문 예제 3
 
-```c
+```cpp
 #define _CRT_SECURE_NO_WARNINGS //Visual Studio에서만 사용
 #include <stdio.h>
 int main(void)
@@ -276,7 +276,7 @@ int main(void)
 
 ## if~else문 예제 4
 
-```c
+```cpp
 #define _CRT_SECURE_NO_WARNINGS //Visual Studio에서만 사용
 #include <stdio.h>
 int main(void)
@@ -292,7 +292,7 @@ int main(void)
 
 ## if~else문 예제 5
 
-```c
+```cpp
 #define _CRT_SECURE_NO_WARNINGS //Visual Studio에서만 사용
 #include <stdio.h>
 int main(void)
@@ -312,7 +312,7 @@ int main(void)
 
 ## 다중 if~else문 1
 
-```c
+```cpp
 #include <iostream>
 using std::cout;
 using std::cin;
@@ -332,7 +332,7 @@ int main() {
 
 ## 다중 if~else문 2
 
-```c
+```cpp
 #define _CRT_SECURE_NO_WARNINGS //Visual Studio에서만 사용
 #include <stdio.h>
 int main(void)
@@ -352,7 +352,7 @@ int main(void)
 
 ## 다중 if~else문 3
 
-```c
+```cpp
 #define _CRT_SECURE_NO_WARNINGS //Visual Studio에서만 사용
 #include <stdio.h>
 int main(void)
@@ -370,7 +370,7 @@ int main(void)
 
 ## 다중 if~else문 4
 
-```c
+```cpp
 #define _CRT_SECURE_NO_WARNINGS //Visual Studio에서만 사용
 #include <stdio.h>
 int main(void)
@@ -392,7 +392,7 @@ int main(void)
 
 ## 다중 if~else문 5
 
-```c
+```cpp
 #define _CRT_SECURE_NO_WARNINGS //Visual Studio에서만 사용
 #include <stdio.h>
 int main(void)
@@ -411,7 +411,7 @@ int main(void)
 
 ## 다중 if~else문 6
 
-```c
+```cpp
 #define _CRT_SECURE_NO_WARNINGS //Visual Studio에서만 사용
 #include <stdio.h>
 int main(void)
@@ -430,7 +430,7 @@ int main(void)
 
 ## switch~case문 예제
 
-```c
+```cpp
 #include <iostream>
 using std::cout;
 using std::cin;
@@ -458,7 +458,7 @@ int main() {
 
 ## 자신의 이름을 1000번 출력
 
-```c
+```cpp
 #include <iostream>
 using std::cout;
 int main() {
@@ -473,7 +473,7 @@ int main() {
 
 ## 1부터 100까지 더하기
 
-```c
+```cpp
 #include <iostream>
 using std::cout;
 using std::endl;
@@ -490,7 +490,7 @@ int main(void)
 
 ## for문 주의사항
 
-```c
+```cpp
 #include <stdio.h>
 int main(void)
 {
@@ -504,7 +504,7 @@ int main(void)
 
 ## 두 수를 입력 받아 합과 평균 출력
 
-```c
+```cpp
 #define _CRT_SECURE_NO_WARNINGS //Visual Studio에서만 사용
 #include <stdio.h>
 int main(void)
@@ -524,7 +524,7 @@ int main(void)
 
 ## 수를 입력 받아 합과 평균 출력력
 
-```c
+```cpp
 #define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
 int main(void)
@@ -540,7 +540,7 @@ int main(void)
 }
 ```
 
-```c
+```cpp
 #define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
 int main(void)
@@ -558,7 +558,7 @@ int main(void)
 
 ## 1부터 1000까지 점점 느리게 출력
 
-```c
+```cpp
 #include <stdio.h>
 int main(void)
 {
@@ -574,7 +574,7 @@ int main(void)
 
 ## 2중 for문 예
 
-```c
+```cpp
 #include <stdio.h>
 int main(void)
 {
@@ -591,7 +591,7 @@ int main(void)
 
 ## 문자 ‘q’를 입력 받을 때까지 계속 입력
 
-```c
+```cpp
 #include <stdio.h>
 #include <conio.h>//_getche()
 int main(void)
@@ -608,7 +608,7 @@ int main(void)
 
 ## 0부터 100점 사이의 점수를 입력받아 P/F 판단
 
-```c
+```cpp
 #define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
 int main(void)
@@ -627,7 +627,7 @@ int main(void)
 
 ## 메뉴를 가지고 있는 프로그램의 기본 틀
 
-```c
+```cpp
 #define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
 int main(void)
@@ -649,7 +649,7 @@ int main(void)
 
 ## 1부터 어떤 수까지 더해야 10000이 넘는가?
 
-```c
+```cpp
 #include <stdio.h>
 int main(void)
 {
@@ -666,7 +666,7 @@ int main(void)
 
 ## 1부터 100까지 홀수만 출력
 
-```c
+```cpp
 #include <stdio.h>
 int main(void)
 {
@@ -682,7 +682,7 @@ int main(void)
 
 ## 함수 만들기 1
 
-```c
+```cpp
 #include <stdio.h>
 void display() {
 	printf("안녕");
@@ -695,7 +695,7 @@ int main() {
 
 ## 함수 만들기 2
 
-```c
+```cpp
 #include <stdio.h>
 void double_number(int x)
 {
@@ -710,7 +710,7 @@ int main()
 
 ## 함수 만들기 3
 
-```c
+```cpp
 #include <stdio.h>
 int double_number(int x)
 {
@@ -725,7 +725,7 @@ int main()
 
 ## 함수 만들기 4
 
-```c
+```cpp
 #include <stdio.h>
 int add(int x, int y)
 {
@@ -742,7 +742,7 @@ int main()
 
 ## 함수 만들기 5
 
-```c
+```cpp
 #include <stdio.h>
 char vending(int x)
 {
@@ -760,7 +760,7 @@ int main()
 
 ## 함수 만들기 6
 
-```c
+```cpp
 #include <stdio.h>
 const char* vending(int x)
 {
@@ -774,7 +774,7 @@ int main()
 }
 ```
 
-```c
+```cpp
 #include <stdio.h>
 char vending(int x)
 {
