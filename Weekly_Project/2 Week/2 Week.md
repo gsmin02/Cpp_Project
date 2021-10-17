@@ -1,6 +1,6 @@
 ## 일반적인 C 출력 방법
 
-```c
+```cpp
 #include <stdio.h>
 int main() {
 	printf("소프트웨어\n");
@@ -10,7 +10,7 @@ int main() {
 
 ## 평범한 C++ 출력 방법
 
-```c
+```cpp
 #include <iostream>
 int main() {
 	std::cout <<"소프트웨어"<<std::endl;
@@ -20,7 +20,7 @@ int main() {
 
 ## 많이 쓰는 C++ 출력 방법
 
-```c
+```cpp
 #include <iostream>
 using namespace std;
 int main() {
@@ -31,7 +31,7 @@ int main() {
 
 ## 이상적인 C++ 출력 방법
 
-```c
+```cpp
 #include <iostream>
 using std::cout;
 using std::endl;
@@ -43,7 +43,7 @@ int main() {
 
 ## C++ 입력 방법
 
-```c
+```cpp
 #include <iostream>
 using std::cout;
 using std::cin;
@@ -58,7 +58,7 @@ int main() {
 
 ## 여러 변수 값 출력
 
-```c
+```cpp
 #include <iostream>
 #include<stdio.h>
 using namespace std;
@@ -75,7 +75,7 @@ int main() {
 
 ## C 입력 방법
 
-```c
+```cpp
 #define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
 int main() {
@@ -90,7 +90,7 @@ int main() {
 ## 나이 입력받아 출력
 
 * C
-```c
+```cpp
 #define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
 int main() {
@@ -103,7 +103,7 @@ int main() {
 ```
 
 * C++
-```c
+```cpp
 #include <iostream>
 using std::cout;
 using std::cin;
@@ -119,7 +119,7 @@ int main() {
 
 ## C 코드를 C++로 바꾸기
 
-```c
+```cpp
 #include <iostream>
 int main() {
 	int num1, num2;
@@ -132,7 +132,7 @@ int main() {
 
 ## 문자형 리터럴: C
 
-```c
+```cpp
 #include <stdio.h>
 int main() {
 	int a =10;
@@ -145,7 +145,7 @@ int main() {
 
 ## 문자형 리터럴: C++
 
-```c
+```cpp
 #include <iostream>
 using std::cout;
 int main() {
@@ -158,7 +158,7 @@ int main() {
 
 ## 문자 A와 문자열 A의 차이점
 
-```c
+```cpp
 #include <stdio.h>
 int main() {
 	printf("%c, %s\n", 'A', "A");
@@ -168,7 +168,7 @@ int main() {
 
 ## 실수형의 저장 범위
 
-```c
+```cpp
 #include <stdio.h>
 int main() {
 	float f_num =15.12345678901234567890f;
@@ -182,7 +182,7 @@ int main() {
 
 ## 자료형의 크기
 
-```c
+```cpp
 #include <iostream>
 #include <limits.h>
 #include <float.h>//double, float 자료형을 쓰기 위함
@@ -209,7 +209,7 @@ int main() {
 
 ## 변수를 상수화: const
 
-```c
+```cpp
 #include <stdio.h>
 int main() {
 	const int num =3;
@@ -221,7 +221,7 @@ int main() {
 
 ## #define문 예
 
-```c
+```cpp
 #include <stdio.h>
 #define AA  2 // 상수 정의
 #define sum3(i,j,k) ((i)+(j)+(k)) // 함수 정의
@@ -236,7 +236,7 @@ int main() {
 
 ## 산술연산자 예
 
-```c
+```cpp
 #include <stdio.h>
 int main() {
 	printf("5+2-3*2/2=%d\n", 5 +2 -3 *2 /2);
@@ -250,7 +250,7 @@ int main() {
 
 ## 증가, 감소 연산자 예
 
-```c
+```cpp
 #include <stdio.h>
 int main() {
 	int a =10, b =10, c =20, d =20;
@@ -271,7 +271,7 @@ int main() {
 
 ## cast 연산자 예
 
-```c
+```cpp
 #include <stdio.h>
 int main() {
 	int x =10, y =4;
@@ -298,7 +298,7 @@ int main() {
 
 ## sizeof 연산자 예
 
-```c
+```cpp
 #include <stdio.h>
 int main() {
 	int x;
@@ -314,7 +314,7 @@ int main() {
 
 ## 삼항 조건 연산자 예
 
-```c
+```cpp
 #include <stdio.h>
 int main() {
 	int i =2, j =4, min;
@@ -330,7 +330,7 @@ int main() {
 
 ## 혼합 대입 연산자 예
 
-```c
+```cpp
 #include <stdio.h>
 int main() {
 	int a =5;
@@ -348,7 +348,7 @@ int main() {
 
 ## 관계(비교) 연산자 예 1
 
-```c
+```cpp
 #include <stdio.h>
 int main() {
 	int a =10, b =20;
@@ -365,7 +365,7 @@ int main() {
 
 ## 관계(비교) 연산자 예 2
 
-```c
+```cpp
 #include <stdio.h>
 int main() {
 	int a =10, b =20, c =10;
@@ -384,7 +384,7 @@ int main() {
 
 ## 논리 연산자와 short circuit rule： 연산 생략
 
-```c
+```cpp
 #include <stdio.h>
 int main() {
 	int a =5, b =0;
@@ -401,7 +401,7 @@ int main() {
 
 ## 관계 연산자 + 논리 연산자
 
-```c
+```cpp
 #include <stdio.h>
 int main() {
 	int score =92;
@@ -420,7 +420,7 @@ int main() {
 
 ## 비트 연산자 예
 
-```c
+```cpp
 #include <stdio.h>
 int main() {
 	int a =0x1;    //2진수로 [0000 * 7] 0001, 16진수로 0000 0001
@@ -437,7 +437,7 @@ int main() {
 
 ## 시프트 연산자 예
 
-```c
+```cpp
 #include <stdio.h>
 int main() {
 	printf("%d\n", 90 <<1); //180
@@ -455,7 +455,7 @@ int main() {
 
 ## & 연산자 예
 
-```c
+```cpp
 #include <stdio.h>
 int main() {
 	int a =10, b =20;
