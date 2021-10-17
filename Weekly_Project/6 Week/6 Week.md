@@ -2,7 +2,7 @@
 
 ## 정수(Integer) 클래스와 객체
 - 정수를 다루기 위한 클래스 Integer
-```c
+```cpp
 class Intefet{ // Integer라는 이름의 class
     private: // 속성
         int val; // 멤버변수, private 속성
@@ -29,7 +29,7 @@ Integer Val2; // ② 객체를 만드는 두 번째 방법
 - 멤버변수는 주로 private로 선언
 - 생략이 가능(멤버의 엑세스 권한이 없으면 private)
 - 해당 클래스의 멤버함수만 접근 가능
-```c
+```cpp
 class Dog {
     private: // 생략 가능
         int age; // 멤버변수
@@ -43,7 +43,7 @@ Dog coco; // 객체
 - 클래스 외부에서 멤버에 직접 접근 가능
 - 멤버함수는 주로 public으로 선언
 - public 멤버함수의 경우 private 멤버변수를 접근하는데 많이 사용
-```c
+```cpp
 class Dog {
     private: // 생략 가능
         int age; // 멤버변수
@@ -87,7 +87,7 @@ Dog coco; // 객체
     - 클래스 안에서 정의
     - 클래스 밖에서 정의
     - 클래스 안에서 정의하는 경우는 클래스의 몸체가 비대해질 수 있으므로 잘 사용하지 않음
-```c
+```cpp
 class Dog {
     private: // 속성
         int age; // 멤버변수
@@ -98,7 +98,7 @@ Dog coco; // 객체
 ```
 
 ## 멤버함수를 클래스 안에서 정의
-```c
+```cpp
 class Dog {
     private:
         int age;
@@ -114,7 +114,7 @@ class Dog {
 
 ## 멤버함수를 클래스 외부에서 정의
 - 리턴형 클래스명::멤버함수명(매개변수 리스트)
-```c
+```cpp
 class Dog {
     private:
         int age;
@@ -136,7 +136,7 @@ void Dog::setAge(int a) // 멤버함수 setAge의 정의
 ## 범위 지정 연산자(scope resolution operator) '::'
 - 멤버함수가 어느 클래스에 포함되어 있는지를 나타낼 때
 - 함수 안에서 전역 변수를 접근할 때
-    ```c
+    ```cpp
     #include <iostream>
     using std::cout;
     int a = 3; // 전역변수
@@ -150,7 +150,7 @@ void Dog::setAge(int a) // 멤버함수 setAge의 정의
 
 ## using과 namespace
 - 기본
-```c
+```cpp
 #include<iostream>
 int main() {
     std::cout<<"소프트웨어"<<std::end;;
@@ -159,7 +159,7 @@ int main() {
 ```
 
 - namespace
-```c
+```cpp
 #include <iostream>
 using namespace std;
 // 네임스페이스로 std 사용, 잘 쓰지 않음
@@ -170,7 +170,7 @@ int main() {
 ```
 
 - using
-```c
+```cpp
 #include <iostream>
 using std::cout;
 using std::endl;
@@ -183,7 +183,7 @@ int main() {
 ## namespace
 - 모든 식별자(변수, 함수 등의 이름)가 유일하도록 보장하는 코드 영역을 정의
     - aa.h
-    ```c
+    ```cpp
     namespace AA {
         int add(int x, int y) {
             return x + y;
@@ -191,7 +191,7 @@ int main() {
     }
     ```
     - bb.h
-    ```c
+    ```cpp
     namespace BB {
         int add(int x, int y) {
             return x + y + 1;
@@ -199,7 +199,7 @@ int main() {
     }
     ```
     - main
-    ```c
+    ```cpp
     #include <iostream>
     #include "aa.h"
     #include "bb.h"
@@ -230,7 +230,7 @@ int main() {
 - 함수를 호출하고 값을 반환하는데 드는 시간상의 지체(overhead)를 줄일 수 있음
 
 ## inline 함수 예
-```c
+```cpp
 #include <iostream>
 using std::cout;
 #define sum(i, j) i+j
@@ -259,7 +259,7 @@ int main() {
 - 이 경우 선언과 정의가 동시에 이루어짐
 - 멤버함수가 클래스 내부에서 정의되면 자동적으로 inline함수가 됨
 - 코드가 짧은 생성자와 소멸자가 대표적인 자동 inline 함수
-    ```c
+    ```cpp
     class Dog{
         private:
             int age;
@@ -274,7 +274,7 @@ int main() {
     - 일반 객체가 멤버(변수/함수)에 접근하기 위해 사용
 - 간접참조연산자: ->
     - 포인터 객체가 멤버(변수/함수)에 접근하기 위해 사용
-```c
+```cpp
 class Dog {
     private: // 속성
         int age; // 멤버변수
@@ -286,7 +286,7 @@ Dog happy, *pHappy; // 객체
 ```
 
 ## 객체의 멤버 호출
-```c
+```cpp
 #include <iostream>
 using std::cout;
 class Dog {
