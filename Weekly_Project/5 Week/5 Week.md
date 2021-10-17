@@ -19,7 +19,7 @@
 ## C의 구조체와 C++의 클래스
 
 ### C의 구조체
-```c
+```cpp
 struct Man { // 구조체 선언
 	char name[7]; // 멤버
 	int age; // 멤버
@@ -29,7 +29,7 @@ struct Man struct_variable;
 C의 구조체는 변수만 지정
 
 ### C++의 클래스
-```c
+```cpp
 class Man {
 private:
     int age;
@@ -43,7 +43,7 @@ C++의 클래스는 변수와 함수 지정
 
 ## 구조체 변수가 멤버에 접근하는 예
 
-```c
+```cpp
 struct Man {
     char name[10];
     int age;
@@ -60,7 +60,7 @@ Test2->age = 7; // 포인터 변수는 멤버를 "->"로 접근
 ## Man형 구조체를 선언하고 변수를 만들어서 멤버에 접근
 
 ### C 스타일
-```c
+```cpp
 #include <stdio.h>
 struct Man {
     char name[10];
@@ -78,7 +78,7 @@ int main(void) {
 ```
 
 ### C++ 스타일
-```c
+```cpp
 #include <iostream>
 using std::cout;
 using std::endl;
@@ -100,7 +100,7 @@ int main() {
 ## 구조체와 레코드
 다음과 같은 필드를 갖는 성적 레코드(record)를 관리하기 위한 구조체 score를 구현   
 학번, 성명 등이 필드에 해당하며 구조체는 멤버로 된다.
-```c
+```cpp
 struct score {
     char hakbun[10];
     char name[10];
@@ -111,7 +111,7 @@ struct score {
 
 ## 구조체 선언과 typedef
 
-```c
+```cpp
 typedef unsigned int uint; // unsigned int를 uint라는 새로운 자료형으로 정의
 uint x; // unsigned int x와 같은 의미
 typedef struct score SCORE; // SCORE라는 새로운 자료형이 생성된 것으로 "struct score" 또는 "SCORE" 둘 다 가능하다
@@ -120,7 +120,7 @@ typedef struct score SCORE; // SCORE라는 새로운 자료형이 생성된 것�
 ## 구조체 변수의 초기화 멤버 값 대입
 
 ### C
-```c
+```cpp
 #include <stdio.h>
 struct score {
     char hakbun[10];
@@ -138,7 +138,7 @@ int main(void) {
 ```
 
 ### C++
-```c
+```cpp
 #include<iostream>
 using namespace std;
 
@@ -163,7 +163,7 @@ int main() {
 ## 구조체 변수들의 대입 연산
 
 ### C
-```c
+```cpp
 #include <stdio.h>
     typedef struct score {
     char hakbun[10];
@@ -183,7 +183,7 @@ int main(void)
 ```
 
 ### C++
-```c
+```cpp
 #include <iostream>
 using std::cout;
 using std::endl;
@@ -208,7 +208,7 @@ int main() {
 ## 구조적 프로그래밍 스타일(C언어)
 간단하게 코드로 구현 시
 ### 기존 소스
-```c
+```cpp
 int main(void) {
     // 입력함수
     // 계산함수
@@ -218,7 +218,7 @@ int main(void) {
 }
 ```
 ### 구조화 된 소스
-```c
+```cpp
 int main(void) {
     input();
     compute();
@@ -306,7 +306,7 @@ output() { // 출력함수
 ■ 하나의 함수 이름(함수 중첨)이나 연산자(연산자 중첩)를 여러 목적으로 사용   
 
 ## 클래스 선언(declaring a class) 객체 정의(defining an object)
-```c
+```cpp
 class 클래스명 {
     속성: // private이나 public, protected가 올 수 있음
         자료선언; // 맴버 변수
