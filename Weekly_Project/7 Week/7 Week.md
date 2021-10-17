@@ -44,6 +44,12 @@ public:
 Dog happy, *pHappy; // 객체
 ```
 
+- happy.age (age가 private이므로 작동하지 않음)
+- happy.getAge() // 해피의 나이를 얻는다.
+- happy.bark() // 해피가 짖는다.
+- pHappy->getAge() // pHappy의 나이를 얻는다.
+- pHappy->bark() // 포인터 객체 pHappy가 짖는다.
+
 ## 클래스와 객체 (인스턴스)
 ```cpp
 #include <iostream>
