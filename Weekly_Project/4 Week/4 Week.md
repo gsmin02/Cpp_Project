@@ -1,6 +1,6 @@
 ## 함수 만들기 1
 
-```c
+```cpp
 #include<stdio.h>
 void display() {
 	printf("안녕");
@@ -13,7 +13,7 @@ int main() {
 
 ## 함수 만들기 2
 
-```c
+```cpp
 #include <stdio.h>
 void double_number(int x)
 {
@@ -28,7 +28,7 @@ int main()
 
 ## 함수 만들기 3
 
-```c
+```cpp
 #include <stdio.h>
 int double_number(int x)
 {
@@ -43,7 +43,7 @@ int main()
 
 ## 함수 만들기 4
 
-```c
+```cpp
 #include <stdio.h>
 int add(int x, int y)
 {
@@ -60,7 +60,7 @@ int main()
 
 ## 함수 만들기 5
 
-```c
+```cpp
 #include <stdio.h>
 char vending(int x)
 {
@@ -78,7 +78,7 @@ int main()
 
 ## 함수 만들기 6
 
-```c
+```cpp
 #include <stdio.h>
 const char* vending(int x)
 { //C++에서는 std::string 사용 가능
@@ -92,7 +92,7 @@ int main()
 }
 ```
 
-```c
+```cpp
 #include <stdio.h>
 char vending(int x)
 {
@@ -108,7 +108,7 @@ int main()
 
 ## C++에서 문자열
 
-```c
+```cpp
 // const char*
 #include <iostream>
 using namespace std;
@@ -124,7 +124,7 @@ int main()
 }
 ```
 
-```c
+```cpp
 // string
 #include <iostream>
 using namespace std;
@@ -142,7 +142,7 @@ int main()
 
 ## 함수의 정의와 선언(원형, prototype)
 
-```c
+```cpp
 #include <stdio.h>
 void view(void);
 int main(void) {
@@ -158,7 +158,7 @@ void view(void) {
 
 ## 함수 선언, 정의, 호출
 
-```c
+```cpp
 #include <stdio.h>
 void fun1(void); // 함수 선언 또는 원형
 void fun2(void); // 함수 선언 또는 원형
@@ -179,7 +179,7 @@ void fun2(void) { // 함수 정의
 
 ## 함수 만들기 1
 
-```c
+```cpp
 #include <stdio.h>
 void display()
 {
@@ -192,7 +192,7 @@ int main()
 }
 ```
 
-```c
+```cpp
 #include <stdio.h>
 void display();
 int main()
@@ -208,7 +208,7 @@ void display()
 
 ## 함수 만들기 2
 
-```c
+```cpp
 #include <stdio.h>
 void print_double_number(int x)
 {
@@ -223,7 +223,7 @@ int main()
 
 ### C++
 
-```c
+```cpp
 #include<iostream>
 using std::cout;
 void print_double_number(int x) {
@@ -237,7 +237,7 @@ int main() {
 
 ## 함수 만들기 3
 
-```c
+```cpp
 #include <stdio.h>
 int double_number(int x)
 {
@@ -255,7 +255,7 @@ int main()
 
 ### C++
 
-```c
+```cpp
 #include <iostream>
 using std::cout;
 using std::endl;
@@ -273,7 +273,7 @@ int main() {
 
 ## 함수 만들기 4
 
-```c
+```cpp
 #include <stdio.h>
 int add(int x, int y)
 {
@@ -290,7 +290,7 @@ int main()
 
 ### C++
 
-```c
+```cpp
 #include <iostream>
 using std::cout;
 using std::endl;
@@ -307,7 +307,7 @@ int main() {
 
 ## 함수 만들기 5
 
-```c
+```cpp
 #include <stdio.h>
 char vending(int x)
 {
@@ -325,7 +325,7 @@ int main()
 
 ### C++
 
-```c
+```cpp
 #include<iostream>
 using std::cout;
 using std::endl;
@@ -343,7 +343,7 @@ int main() {
 
 ## 함수 만들기 6
 
-```c
+```cpp
 #include <stdio.h>
 const char* vending(int x)
 {
@@ -359,7 +359,7 @@ int main()
 
 ### C++
 
-```c
+```cpp
 #include <iostream>
 using std::cout;
 using std::endl;
@@ -375,7 +375,7 @@ int main() {
 
 ## 함수의 리턴값
 
-```c
+```cpp
 #include <stdio.h>
 int add(int x, int y);//함수 선언
 //int add(int,int);처럼 매개변수명은 생략 가능
@@ -400,7 +400,7 @@ int add(int x, int y) //함수 정의
 
 ## 재귀 함수 예
 
-```c
+```cpp
 #include <stdio.h>
 int sum(int n); // 함수 선언
 int main(void) {
@@ -418,7 +418,7 @@ int sum(int n) { // 함수 정의
 
 ## 실매개변수와 형식매개변수 예
 
-```c
+```cpp
 #include <stdio.h>
 int sum(int a, int b); //함수 선언
 int main(void)
@@ -443,7 +443,7 @@ int sum(int a, int b)
 
 ## call by value 예
 
-```c
+```cpp
 #include <stdio.h>
 int sum(int x, int y);
 int main(void)
@@ -465,7 +465,7 @@ int sum(int a, int b)
 
 ## call by reference
 
-```c
+```cpp
 #include <stdio.h>
 int sum(int* pa, int* pb);
 int main(void)
@@ -487,7 +487,7 @@ int sum(int* pa, int* pb)
 
 ## 반복되는 부분은 함수로 구현
 
-```c
+```cpp
 #include <stdio.h>
 void add(int x, int y);
 int main(void)
@@ -507,7 +507,7 @@ void add(int x, int y)
 
 ## 모듈화 프로그래밍
 
-```c
+```cpp
 #include "score.h"
 int main(void)
 {
@@ -543,7 +543,7 @@ int min_number(int a, int b)//함수 정의
 }
 ```
 
-```c
+```cpp
 //score.h의 내용
 #define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
@@ -555,7 +555,7 @@ int min_number(int a, int b); //함수 선언
 
 ## 지역 변수의 유효범위
 
-```c
+```cpp
 #include <stdio.h>
 int main(void)
 {
@@ -574,7 +574,7 @@ int main(void)
 
 ## auto변수
 
-```c
+```cpp
 #include <stdio.h>
 int main(void)
 {
@@ -595,7 +595,7 @@ int main(void)
 
 ## auto변수와 static변수
 
-```c
+```cpp
 #include <stdio.h>
 void sub(void);
 int main(void)
@@ -617,7 +617,7 @@ void sub(void)
 
 ### C++
 
-```c
+```cpp
 #include <iostream>
 using std::cout;
 using std::endl;
@@ -639,7 +639,7 @@ void sub(void) {
 
 ## Man형 구조체를 선언하고 변수를 만들어서 멤버에 접근
 
-```c
+```cpp
 #include <stdio.h>
 struct Man { //구조체 선언
 	char name[10]; //멤버
@@ -660,7 +660,7 @@ int main(void)
 
 ### C++
 
-```c
+```cpp
 #include <iostream>
 using std::cout;
 using std::endl;
