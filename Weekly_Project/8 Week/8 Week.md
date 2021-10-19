@@ -156,24 +156,24 @@ goo1 == & &goo1[0]
 ## 생성자 정의
 - ◆ 멤버 함수 호출 시 자동으로 값 초기화 방법 3가지  
     1. 
-        ```cpp
-        Dog(){ age=1 }
-        ```  
+```cpp
+Dog(){ age=1 }
+```  
     2. 
-        ```cpp
-        Dog():age(1){ }
-        ```  
+```cpp
+Dog():age(1){ }
+```  
     3. 
-        ```cpp
-        Dog():age{1}()
-        ```
+```cpp
+Dog():age{1}()
+```
 - 외부에서 정의  
     1. 
-        ```cpp
-        Dog::Dog() {
-            age = 1;
-        }
-        ```
+```cpp
+Dog::Dog() {
+    age = 1;
+}
+```
 
 
 ## 배열 복사는 strcpy() 사용
@@ -203,6 +203,74 @@ int main() {
     int z{3}; // Uniform initialization, C+11
     int z1{}; // Uniform initialization, 자동으로 0, C++11
     std::cout << x << y << z << z1;
+}
+```
+
+## 종합 응용
+- ◆ 코드
+```cpp
+#include <iostream>
+#include <string>
+using namespace std;
+
+class Cat {
+private:
+    int age;
+    double weight;
+    string name;
+public:
+    int getAge();
+    void setAge(int a);
+    double getWeight();
+    void setWeight(double a);
+    string getName();
+    void setName(string pName);
+
+    void meow();
+    Cat(int a);
+    ~Cat();
+};
+
+int Cat::getAge() {
+    return this->age;
+}
+void Cat::setAge(int a) {
+    this->age = a;
+}
+
+double Cat::getWeight() {
+    return this->weight;
+}
+void Cat::setWeight(double a) {
+    this->weight = a;
+}
+
+string Cat::getName() {
+    return this->name;
+}
+void Cat::setName(string pName) {
+    this->name = pName;
+}
+void Cat::meow() {
+    cout << "냐옹.\n";
+}
+
+Cat::Cat(int a) {
+    this->age = a;
+    cout << this << endl;
+}
+Cat::~Cat() {
+    cout << "소멸";
+}
+
+int main() {
+    Cat nabi(3);
+    nabi.setAge(3);
+    nabi.setWeight(3);
+    nabi.setName("나비");
+    cout << nabi.getName() << " 나이는 " << nabi.getAge() << "살이다.";
+    nabi.meow();
+    return 0;
 }
 ```
 
