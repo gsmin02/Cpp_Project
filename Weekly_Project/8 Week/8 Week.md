@@ -118,6 +118,84 @@ Dog
 +getAge()  
 +setAge()  
 
+## std namespace
+```cpp
+#include <iostream>
+using std::cout; //  더 좋은 방법
+using std::endl;
+// 이제부터 cout은 std::cout을 참조
+int main() {
+    cout << "소프트웨어" << endl;
+    return 0;
+}
+```
+
+## 자동 inline 함수
+- ◆ 멤버함수가 클래스 내부에서 정의되면 자동적으로 inline 함수가 된다.
+
+## 일차원 배열의 이름 : 배열의 시작주소
+- ◆ 배열의 이름은 그 배열의 시작 주소
+```
+goo1[0] = 00AFFD6C
+goo1[1] = 00AFFD70
+goo1[2] = 00ADDF74
+goo1 = 00AFFD6C
+goo2[0] = 00AFFD58
+goo2[1] = 00AFFD5C
+goo2[2] = 00AFFD60
+goo2 = 00AFFD58
+
+goo1 == & &goo1[0]
+```
+
+## 문자열과 문자형 배열
+- 문자열은 문자형 배열에 두 가지 방법으로 초기화할 수 있음
+    - char eng\[4\]={'A','B','C','\0'} // 문자의 모임
+    - ◆ char eng\[4\]="ABC";
+
+## 생성자 정의
+- ◆ 멤버 함수 호출 시 자동으로 값 초기화 방법 3가지
+    1. Dog(){ age=1 }
+    2. Dog():age(1){ }
+    3. Dog():age{1}()
+- 외부에서 정의
+    ```cpp
+    Dog::Dog() {
+        age = 1;
+    }
+    ```
+
+
+## 배열 복사는 strcpy() 사용
+- 코드
+```cpp
+#define _CRT_SECURE_NO_WARNINGS // Visual Studio의 경우
+#include <iostream>
+#include <string> // or string.h (clang++, gcc 등 주로 온라인 컴파일러)
+
+int main(void) {
+    char s1[5];
+    char s2[5] = "soft"; // 원본
+    // s1 = s2; // error C3863: 배열 형식 'char [5]'은(는) 할당할 수 없습니다.
+    strcpy(s1, s2); // ◆ s2 주소의 문자열을 널 문자를 만날 때까지 s1 주소로 복사
+    std::cout << "s1=" << s1 << " s2=" s2 << std::endl;
+    return 0;
+}
+```
+
+## C++에서 변수를 초기화하는 방법
+- ◆ 코드
+```cpp
+#include <iostream>
+int main() {
+    int x=1; // copy initialization, 비추
+    int y(2); // direct initialization
+    int z{3}; // Uniform initialization, C+11
+    int z1{}; // Uniform initialization, 자동으로 0, C++11
+    std::cout << x << y << z << z1;
+}
+```
+
 ## 출처
 C++프로그래밍(21-2학기)한성현교수 강의 내용 변형 및 요약  
 Computer S/W, [Induk Univ][googlelink]  
