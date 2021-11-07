@@ -15,6 +15,7 @@ C++ 언어를 학습하며 학습한 내용을 복습하고 정리하는 곳입�
 - [7 주차][7] - 객체와 멤버, 배열, 생성자/소멸자, this포인터  
 - [8 주차][8] - 중간 정리  
 - [9 주차][9] - const, 포인터, 지역과 전역변수, 동적메모리할당  
+- [10 주차][10] - 함수 중첩, 디폴트인자
 
 ## 출처
 C++프로그래밍(21-2학기)한성현교수 강의 내용 변형 및 요약  
@@ -34,3 +35,4 @@ C/C++ 프로그래밍 | 송재철, 한성현, 김경신 공저 | 양서각 | 200
 [7]: https://github.com/gsmin02/Cpp_Project/blob/main/Weekly_Project/7%20Week/7%20Week.md
 [8]: https://github.com/gsmin02/Cpp_Project/blob/main/Weekly_Project/8%20Week/8%20Week.md
 [9]: https://github.com/gsmin02/Cpp_Project/blob/main/Weekly_Project/9%20Week/9%20Week.md
+[10]: https://github.com/gsmin02/Cpp_Project/blob/main/Weekly_Project/10%20Week/10%20Week.md
