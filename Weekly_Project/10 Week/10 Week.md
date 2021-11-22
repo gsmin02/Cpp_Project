@@ -142,4 +142,3 @@ C/C++ 프로그래밍 | 송재철, 한성현, 김경신 공저 | 양서각 | 200
 
 [id]: URL "Optional Title here"
 [googlelink]: https://www.induk.ac.kr "Go google"
-[link]: https://stackoverflow.com/questions/1825964/c-c-maximum-stack-size-of-program/1826072
