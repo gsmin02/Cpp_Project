@@ -205,3 +205,13 @@ Point Point::operator %(Point ob)
 ```
 
 - %연산자의 연산이 그 고유의 사용과 관련되어 있지 않기 때문이다
+
+## 출처
+
+C++프로그래밍(21-2학기)한성현교수 강의 내용 변형 및 요약  
+Computer S/W, [Induk Univ][googlelink]  
+한성현 교수님 -  hsh@induk.ac.kr  
+C/C++ 프로그래밍 | 송재철, 한성현, 김경신 공저 | 양서각 | 2007년 03월 03일
+
+[id]: URL "Optional Title here"
+[googlelink]: https://www.induk.ac.kr "Go google"
