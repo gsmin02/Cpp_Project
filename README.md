@@ -18,6 +18,7 @@ C++ 언어를 학습하며 학습한 내용을 복습하고 정리하는 곳입�
 - [10 주차][10] - 함수 중첩, 디폴트인자
 - [11 주차][11] - 연산자중첩, 단항 연산자 중첩, 이항 연산자 중첩, 형변환 함수
 - [12 주차][12] - 상속에서 기본클래스와 파생클래스, 상속접근제어, protected 멤버, 상속에서 생성자와 소멸자, 계층적 다중 상속
+- [13 주차][13] - 상속 심화, 바인딩, 정적멤버변수, 가상함수
 
 ## 출처
 C++프로그래밍(21-2학기)한성현교수 강의 내용 변형 및 요약  
@@ -40,3 +41,4 @@ C/C++ 프로그래밍 | 송재철, 한성현, 김경신 공저 | 양서각 | 200
 [10]: https://github.com/gsmin02/Cpp_Project/blob/main/Weekly_Project/10%20Week/10%20Week.md
 [11]: https://github.com/gsmin02/Cpp_Project/blob/main/Weekly_Project/11%20Week/11%20Week.md
 [12]: https://github.com/gsmin02/Cpp_Project/blob/main/Weekly_Project/12%20Week/12%20Week.md
+[13]: https://github.com/gsmin02/Cpp_Project/blob/main/Weekly_Project/13%20Week/13%20Week.md
