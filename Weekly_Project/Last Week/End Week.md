@@ -691,7 +691,7 @@ public:
 
 ## 상속 : is-a, is_a, is a 관계
 
-부모 suerclass | 기본(Base)클래스 | B
+부모 superclass | 기본(Base)클래스 | B
 :---: | :---: | :---:
 . | inherits from ↑ 상속과정 |
 자식 subclass | 파생(Derived) 클래스 | A
