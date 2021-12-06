@@ -416,10 +416,10 @@ public:
     }
     Cat() { age = 1; name = "냥이"; }
     // 디폴트 생성자, 동적 할당된 배열 객체가 호출
-    ~Cat() { cout << name << "객체 바이\n"; };
+    ~Cat() { cout << name << "객체 바이\n"; }
     int getAge() const;
     string getName() const;
-    string setAge(int age);
+    void setAge(int age);
     void setName(string pName);
     void meow() const;
     void cry(int x = 1);
@@ -434,14 +434,14 @@ int Cat::getAge() const { return age; }
 void Cat::setAge(int age) { this -> age = age; }
 void Cat::setName(string pName) { name = pName; }
 string Cat::getName() const { return name; }
-coid Cat::meow() const { cout << name << "고양이가 울어요\n"; }
+void Cat::meow() const { cout << name << "고양이가 울어요\n"; }
 
 int main() {
     Cat nabi, yaong(2, "야옹"), *pNabi;
     int num, pAge;
 
     cout << nabi.getName() << " 출생 나이는 " << nabi.getAge() << " 살이다.\n";
-    cout << yaong,getName() << " 출생 나이는 " << yaong.getAge() << " 살이다.\n";
+    cout << yaong.getName() << " 출생 나이는 " << yaong.getAge() << " 살이다.\n";
     pNabi = &nabi;
     cout << pNabi -> getName() << " 출생 나이는 " << pNabi -> getAge() << " 살이다.\n";
 
@@ -458,7 +458,7 @@ int main() {
     Cat* pCat = new Cat[num]; // 객체배열을 동적으로 메모리 할당, default 생성자 만들어야 함
     if (!pCat) { cout << "동적으로 메모리할당이 되지 않았습니다."; exit(1); }
     for (int i = 0; i < num; i++) {
-        cout << "pCat[" << i <<"]" << " 객체의 나이ㄹㄹ 입력하십시오 : ";
+        cout << "pCat[" << i <<"]" << " 객체의 나이를 입력하십시오 : ";
         cin >> pAge;
         pCat[i].setAge(pAge);
     }
