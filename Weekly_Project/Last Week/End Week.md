@@ -90,16 +90,277 @@ public:
 
 ## 상속에서 class diagram
 
+- 이름 앞에 -는 private, #은 protected, +는 public
+
 | Name |
 | :---: |
 | -name |
-| +get_name   +print_name |
+| +get_name  +print_name |
 | ↑ |
 | Phone |
 | -phone |
-| +get_phone   +print_phone |
+| +get_phone  +print_phone |
 
-## 최종 코드
+## 오버로딩, 오버라이딩
+
+- 오버로딩
+
+```cpp
+class A {
+private:
+    int age;
+public:
+    A() { age = 1; }
+    A(int a) { age = a; }
+};
+```
+
+- 오버라이딩
+
+```cpp
+class A {
+public:
+    virtual int SS(int i) { return (i * 2); }
+};
+class B: public A {
+public:
+    int SS(int i) { return (i * 3);}
+}
+```
+
+## 정적(static) 멤버변수
+
+```cpp
+#include <iostream>
+using std::cout;
+
+class Point {
+    int x;
+    int y;
+    static int count; // 선언
+public:
+    Point() { cout << ++count; }
+    ~Point() { cout << --count; }
+};
+int Point::count = 0; // 정의
+int main() {
+    Point p1, p2, p3;
+    return 0;
+}
+```
+
+## 템플릿 구현 형식
+
+```cpp
+template <class 자료형이름> 리턴형 함수이름(배개변수리스트) {
+    // 함수 코드
+}
+```
+
+```cpp
+template <class T> void SS(T x, T y) { // 여기서 T는 결정하지 않은 자료형
+    // 함수 코드
+}
+```
+
+## 템플릿 구현
+
+```cpp
+#include <iostream>
+using std::cout;
+
+template <class T> T Min(T n1, T n2) { //  자료형이 T, 리턴형, 매개변수가 모두 T 형
+    return (n1 < n2 ? n1 : n2);
+}
+int main() {
+    int min_i;
+    min_i = Min(3, 6); // 매개변수 자료형이 정수형으로 T는 int형이 됨
+    cout << min_i << ", ";
+    
+    double min_d;
+    min_d = Min(10.3, 20.6); // 매개변수 자료형이 double형으로 T는 double형이 됨
+    cout << min_d;
+    return 0;
+}
+```
+
+## 실매개변수와 형식매개변수 예
+
+```cpp
+#include <stdio.h>
+int add(int x, int y);
+int main(void) {
+    int sum;
+    sum = add(5, 10);
+    // 함수를 호출할 때 사용하는 매개변수인 5와 10은 실매개변수, argument
+}
+int add(int x, int y) { // 함수 정의시 사용하는 x와 y는 형식매개변수, parameter
+    // x에 5, y에 10이 전달됨
+    return (x + y);
+}
+```
+
+- 실매개변수는 실제 값을 갖는 매개변수
+- 형식매개변수는 실매개변수를 전달받기 위한 형식적인 매개변수
+- 형식매개변수는 다른 어떤 변수명을 사용해도 됨
+- add()함수는 다음과 같인 만들어도 됨
+  - ``` int add(int a, int b) { return (a + b); }
+
+## 매개변수를 전달하는 방법 - 매우 중요
+
+- C 언어에서는 기본적으로 값에 의한 호출(call by value)
+- 실매개변수의 값을 형식매개변수로 전달
+- 이 방법은 실매개변수를 형식매개변수로 전달할 뿐 함수 내부에서 형식매개변수가 변경되더라도 실매개변수는 변경되지 않음
+- 형식매개변수가 변하면 실매개변수도 변하게 하려면 포인터를 이용하여 call by reference로 구현해야 함
+
+값에 의한 호출 (call by value) | 주소에 의한 호출 (call by reference)
+:---: | :---:
+실매개변수의 값을 형식매개변수로 전달 | 실매개변수의 주소를 형식매개변수로 전달
+
+## 참조자(reference) - 매우 중요
+
+- C++에서만 가능
+- A reference is an alternative name for an object (Bjarne Stroustrup).
+- 참조자를 사용하려면 파일명이 .cpp이어야 함
+- 변수의 별명
+  - int & rx = x;
+  - rx는 x를 참조하도록 초기화된 정수형 참조자
+  - 참조자(rx)에 변화를 주면 그 타켓(x)도 변함
+
+```cpp
+#include <iostream>
+using std::cout;
+using std::endl;
+int main(void) {
+    int x = 10;
+    int& rx = x; // rx는 x의 참조자
+    cout << x << " " << rx << endl;
+    rx = rx + 10;
+    cout << x << " " << rx << endl; // 참조자(rx)에 변화를 주면 그 타겟도(x)로 변함
+    x = x + 10;
+    cout << x << " " << rx << endl; // 타겟(x)애 변화를 주면 그 참조자도(rx)도 변함
+    return 0;
+}
+```
+
+## call by reference - 매우 중요
+
+- 포인터 사용 C, C++ 가능
+
+```cpp
+void up(int* a);
+int main() {
+    int a = 2;
+    cout << a << endl;
+    up(&a);
+    cout << a << endl;
+    return 0;
+}
+void up(int *a) {
+    *a = *a + 1;
+    cout << *a << endl;
+}
+```
+
+- 참조자(reference)를 사용하는 방법 C++ 가능
+
+```cpp
+void up(int &a);
+int main() {
+    int a = 2;
+    cout << a << endl;
+    up(a);
+    cout << a<< endl;
+    return 0;
+}
+void up(int &a) {
+    a = a + 1;
+    cout << a << endl;
+}
+```
+
+- 값(value)를 사용하는 방법 C, C++ 가능
+
+```cpp
+void up(int a);
+int main() {
+    int a = 2;
+    cout << a << endl;
+    up(a);
+    cout << a<< endl;
+    return 0;
+}
+void up(int a) {
+    a = a + 1;
+    cout << a << endl;
+}
+```
+
+## 템플릿을 이용해 일반화된 클래스 구현 - 매우 중요
+
+```cpp
+#include <iostream>
+using std::cout;
+using std::endl;
+
+template <class T1, class T2> class CCC {
+    T1 x;
+    T2 y;
+public:
+    CCC(T1 xx, T2 yy) { x = xx; y = yy; }
+    void Print() { cout << x << ', ' << y << endl; }
+};
+int main() {
+    CCC<int, int> C1(10, 20);
+    CCC<double, double> c2(3.5, 5.5);
+    CCC<char, const char*> c3('I', "Love You!");
+
+    c1.Print();
+    c2.Print();
+    c3.Print();
+    return 0;
+}
+```
+
+## vector 컨테이너
+
+```cpp
+#include <iostream>
+#include <vector>
+using namespace std;
+int main() {
+    vector <int> x;
+    x.push_back(1);
+    x.push_back(2);
+    for (int i = 0; i < x.size(); i++) {
+        cout << x[i] << endl;
+    }
+    return 0;
+}
+```
+
+## 문자열 전용 컨테이너 : string 클래스
+
+```cpp
+#include <iostream>
+#include <string>
+using namespace std;
+int main() {
+    string str = "안녕!";
+
+    cout << str << endl;
+    str.push_back('H');
+    str.push_back('i');
+
+    cout << str << endl; // 안녕!Hi
+    for (int i = 0; i < str.size(); i ++) {
+        cout << str[i];
+    }
+    return 0;
+}
+```
+
+## 코드 1
 
 ```cpp
 #include <iostream>
@@ -177,6 +438,69 @@ int main() {
 
     delete[]pCat;
     // 할당 받은 메모리 해제, 배열로 할당받은 경우 delete 다음에 반드시 []를 써야 함
+    return 0;
+}
+```
+
+## 코드 2 - 가장 중요
+
+```cpp
+#include <iostream>
+using std::cout;
+using std::endl;
+using std::string;
+
+class Man {
+    string name;
+    int age;
+public:
+    Man(string n, int a) {
+        name = n;
+        age = a;
+    }
+    void m_show();
+};
+void Man::m_show() {
+    cout << "이름 : " << name << endl;
+    cout << "나이 : " << age << endl;
+}
+class Student : public Man {
+    string ban;
+    string hak;
+public:
+    Student(string n, int a, string b, string h) : Man(n, a) {
+        ban = b;
+        hak = h;
+    }
+    void s_show();
+};
+void Student::s_show() {
+    m_show();
+    cout << "반 : " << ban << endl;
+    cout << "학번 : " << hak << endl;
+}
+class Teacher : public Man {
+    string major;
+    string subject;
+public:
+    Teacher(string n, int a, string m, string s) :Man(n , a) {
+        major = m;
+        subject = s;
+    }
+    void t_show();
+};
+void Teacher::t_show() {
+    m_show();
+    cout << "전공 : " << major << endl;
+    cout << "담당과목: " << subject << endl;
+}
+
+int main() {
+    Student gsm("구승민", 20, "A반", "202112401");
+    Teacher hsh("한미소", 40, "전산", "C++프로그래밍");
+
+    gsm.s_show();
+    hsh.t_show();
     return 0;
 }
 ```
@@ -342,6 +666,50 @@ public:
 
 - A is a subclass of B
 - B is a superclass of A
+
+## static변수
+
+- 정적 바인딩, ``` static int y = 10; ``` 에서 y의 초기값은 컴파일시 10으로 정해지며 실행시에 이 선언문은 실행하지 않음
+
+## C++에서 새로 도입된 cast 연산자
+
+```cpp
+int main() {
+    int x = 10, y = 4;
+
+    cout << x / y << endl;
+    cout << (double)x / y << endl; // 1
+    cout << static_cast<double>(x) / y << endl; // 2
+    return 0;
+}
+```
+
+- 1과 2는 같은 소스임
+
+## virtual 있을 때와 없을 때의 차이 - 중요
+
+```cpp
+#include <iostream>
+using std::cout;
+
+class Dot {
+public:
+    virtual void draw() { cout << "Dot::draw()\n"; }
+    void print() {
+        cout << "Dot 클래스\n";
+        draw();
+    }
+};
+class Line:public Dot {
+public:
+    void draw() { cout << "Line::draw()\n"; }
+};
+int main() {
+    Line line;
+    line.print();
+    return 0;
+}
+```
 
 ## 출처
 
