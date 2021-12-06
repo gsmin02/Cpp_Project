@@ -1,7 +1,7 @@
 
 # C++ Learning Project
 
-## Start at 2021-09-01
+## Learning period - 2021-09-01 to 2021-12-14
 
 C++ 언어를 학습하며 학습한 내용을 복습하고 정리하는 곳입니다!
 
@@ -22,6 +22,7 @@ C++ 언어를 학습하며 학습한 내용을 복습하고 정리하는 곳입�
 - [13 주차][13] - 상속 심화, 바인딩, 정적멤버변수, 가상함수
 - [14 주차][14] - 다형성, 템플릿, STL, friend함수, 예외처리
 - [15 주차][15] - 콘솔입출력, ios클래스, 입출력 조절자, 파일 입출력력
+- [마지막 주차][16] - 최종 정리리
 
 ## 출처
 
@@ -48,3 +49,4 @@ C/C++ 프로그래밍 | 송재철, 한성현, 김경신 공저 | 양서각 | 200
 [13]: https://github.com/gsmin02/Cpp_Project/blob/main/Weekly_Project/13%20Week/13%20Week.md
 [14]: https://github.com/gsmin02/Cpp_Project/blob/main/Weekly_Project/14%20Week/14%20Week.md
 [15]: https://github.com/gsmin02/Cpp_Project/blob/main/Weekly_Project/15%20Week/15%20Week.md
+[16]: https://github.com/gsmin02/Cpp_Project/blob/main/Weekly_Project/Last%20Week/End%20Week.md
