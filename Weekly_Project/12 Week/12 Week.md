@@ -1,3 +1,4 @@
+
 # 상속
 
 ## 상속성(inheritance)
