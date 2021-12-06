@@ -468,7 +468,7 @@ int main() {
 
     cout << endl;
 
-    delete[]pCat;
+    delete[] pCat;
     // 할당 받은 메모리 해제, 배열로 할당받은 경우 delete 다음에 반드시 []를 써야 함
     return 0;
 }
@@ -691,7 +691,7 @@ public:
 
 ## 상속 : is-a, is_a, is a 관계
 
-부모 suoerclass | 기본(Base)클래스 | B
+부모 suerclass | 기본(Base)클래스 | B
 :---: | :---: | :---:
 . | inherits from ↑ 상속과정 |
 자식 subclass | 파생(Derived) 클래스 | A
