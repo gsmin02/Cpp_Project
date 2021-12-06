@@ -270,11 +270,21 @@ public:
 
 부모 suoerclass | 기본(Base)클래스 | B
 :---: | :---: | :---:
-.| inherits from ↑ 상속과정 |
+. | inherits from ↑ 상속과정 |
 자식 subclass | 파생(Derived) 클래스 | A
 
 - A is a subclass of B
 - B is a superclass of A
+
+## 상속 접근제어 속성에 따른 파생 클래스 멤버의 속성변화
+
+- 상속 접근제어 속성에 따라 기본 클래스 멤버의 속성의 파생 클래스에서 어떻게 변하는지를 나타낸다.
+
+속성 | private | protected | public
+:---: | :---: | :---: | :---:
+private | 상속불가 | 상속불가 | 상속불가
+protected | private | protected | protected
+public | private | protected | public
 
 ## 출처
 
