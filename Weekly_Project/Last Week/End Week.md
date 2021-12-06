@@ -32,6 +32,75 @@ int main() {
 }
 ```
 
+## 상속 접근제어 속성에 따른 파생 클래스 멤버의 속성변화
+
+- 상속 접근제어 속성에 따라 기본 클래스 멤버의 속성의 파생 클래스에서 어떻게 변하는지를 나타낸다.
+- 일반적으로 public 상속이 제일 많이 이루어짐
+
+속성 | private | protected | public
+:---: | :---: | :---: | :---:
+private | 상속불가 | 상속불가 | 상속불가
+protected | private | protected | protected
+public | private | protected | public
+
+## protected 멤버 변수
+
+```cpp
+class A {
+protected:
+    int a, b;
+public:
+    void setAB(int i, int j) { a = i, b = j; }
+};
+
+class B:public A {
+    int c;
+public:
+    void setC(int n) { c = n; }
+    void showABC() { cout << a << b << c << endl; }
+}
+```
+
+## 파생 클래스 생성자에서 기본 클래스 생성자에 매개변수 전달 형식
+
+- ``` 파생클래스생성자(매개변수리스트):기본클래스생성자(매개변수리스트) { } ```
+
+```cpp
+class A {
+    int a;
+public:
+    A(int i) {
+        cout << "A의 생성자\n";
+        a = i;
+    }
+    ~A() { cout << "A의 소멸자\n"; }
+    void showA() { cout << a << '\n'; }
+};
+class B: public A {
+    int b;
+public:
+    B(int i, int j):A(i) { // i는 클래스 생성자의 매개변수로 전달
+        cout<<"B의 생성자\n";
+        b = j;
+    }
+    ~B() { cout << "B의 소멸자\n"; }
+    void showB() { cout << b << endl; }
+};
+```
+
+## 상속에서 class diagram
+
+| Name |
+| :---: |
+| -name |
+| +get_name  
++print_name |
+| ↑ |
+| Phone |
+| -phone |
+| +get_phone  
++print_phone |
+
 ## 최종 코드
 
 ```cpp
@@ -275,16 +344,6 @@ public:
 
 - A is a subclass of B
 - B is a superclass of A
-
-## 상속 접근제어 속성에 따른 파생 클래스 멤버의 속성변화
-
-- 상속 접근제어 속성에 따라 기본 클래스 멤버의 속성의 파생 클래스에서 어떻게 변하는지를 나타낸다.
-
-속성 | private | protected | public
-:---: | :---: | :---: | :---:
-private | 상속불가 | 상속불가 | 상속불가
-protected | private | protected | protected
-public | private | protected | public
 
 ## 출처
 
