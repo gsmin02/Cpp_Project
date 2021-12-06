@@ -267,6 +267,38 @@ int main() {
 }
 ```
 
+## vector container, iterator, algorithm, functor
+
+```cpp
+#include <iostream>
+#include <vector> // vector container
+#include <algorithm> // sort
+#include <functional> // 함수자 less<>, greater<>
+using namespace std;
+int main() {
+  vector<int> v(5); //vector container
+  cout << v.size() << " : " << v.capacity() << endl; //5 :5
+  //capacity는 할당된 메모리 공간의 크기, size는 저장된 데이터 요소의 개수
+  for (int i = 0; i < v.size(); i++) cout << v[i] << ' '; //0 0 0 0 0
+  cout << endl;
+  for (int i = 0; i < v.size(); i++) v[i] = i + 1;
+  for (int i = 0; i < v.size(); i++) cout << v[i] << ' '; //1 2 3 4 5
+  cout << endl;
+  for (int i = 0; i < 5; i++) v.push_back(10 - i);
+  vector<int>::iterator iter; //iterator
+  for (iter = v.begin(); iter != v.end(); iter++)cout << *iter << ' ';
+  // 1 2 3 4 5 10 9 8 7 6
+  sort(v.begin(), v.end()); cout << endl; //algorithm
+  for (iter = v.begin(); iter != v.end(); iter++)cout << *iter << ' ';
+  // 1 2 3 4 5 6 7 8 9 10
+  sort(v.begin(), v.end(), greater<int>()); //functor
+  cout << endl;
+  for (iter = v.begin(); iter != v.end(); iter++)cout << *iter << ' ';
+  // 10 9 8 7 6 5 4 3 2 1
+  return 0;
+}
+```
+
 # friend 함수
 
 ## friend함수와 friend클래스
