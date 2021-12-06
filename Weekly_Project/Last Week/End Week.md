@@ -270,7 +270,7 @@ public:
 
 부모 suoerclass | 기본(Base)클래스 | B
 :---: | :---: | :---:
-inherits from ↑ 상속과정 |
+| inherits from ↑ 상속과정 |
 자식 subclass | 파생(Derived) 클래스 | A
 
 - A is a subclass of B
