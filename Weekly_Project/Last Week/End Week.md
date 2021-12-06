@@ -581,7 +581,7 @@ int getAge() const {
 - new는 메모리를 동적으로 할당하고, 할당된 메모리에 대한 주소를 반환하는 연산자이다.
   - malloc() 함수와 마찬가지로, 요구한 만큼의 메모리가 충분하지 않으면 new는 null 포인터를 반환한다.
   - ``` int *pi = new int; ```
-  - ``` int \*pi = (int *)malloc(sizeof(int)); ```
+  - ``` int *pi = (int *)malloc(sizeof(int)); ```
 - delete는 free()함수와 마찬가지로, 더 이상 필요 없는 메모리를 해제한다.
   - ``` delete pi; ```
   - ``` free(pi); ```
