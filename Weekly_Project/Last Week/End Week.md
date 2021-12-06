@@ -93,13 +93,11 @@ public:
 | Name |
 | :---: |
 | -name |
-| +get_name  
-+print_name |
+| +get_name  +print_name |
 | ↑ |
 | Phone |
 | -phone |
-| +get_phone  
-+print_phone |
+| +get_phone  +print_phone |
 
 ## 최종 코드
 
