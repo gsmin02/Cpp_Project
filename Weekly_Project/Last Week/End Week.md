@@ -268,6 +268,7 @@ public:
 
 ## 상속 : is-a, is_a, is a 관계
 
+ | | 
 :---: | :---: | :---:
 부모 suoerclass | 기본(Base)클래스 | B
 | inherits from ↑ 상속과정 |
